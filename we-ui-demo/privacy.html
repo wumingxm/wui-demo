@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/weui.min.css" />
+	</head>
+
+	<body>
+		<div class="page">
+			<div class="page_bd">
+				<div class="weui-cells__title">通讯录</div>
+				<div class="weui-cells">
+					<div class="weui-cell weui-cell_switch">
+						<div class="weui-cell__bd">
+							<p>加我为朋友时需要验证</p>
+						</div>
+						<div class="weui-cell__ft">
+							<label for="switchCP" class="weui-switch-cp">
+                        		<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
+                        		<div class="weui-switch-cp__box"></div>
+                    		</label>
+						</div>
+					</div>
+					<div class="weui-cell weui-cell_switch">
+						<div class="weui-cell__bd">
+							<p>向我推荐通讯录朋友</p>
+						</div>
+						<div class="weui-cell__ft">
+						   <label for="switchCP" class="weui-switch-cp">
+                            	<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
+                        		<div class="weui-switch-cp__box"></div>
+                    		</label>
+						</div>
+					</div>
+
+					<div class="weui-cell weui-cell_access weui-cell_example">
+						<div class="weui-cell__bd">
+							<p>添加我的方式</p>
+						</div>
+						<div class="weui-cell__ft"></div>
+					</div>
+					<div class="weui-cell weui-cell_access weui-cell_example">
+						<div class="weui-cell__bd">
+							<p>通讯录黑名单</p>
+						</div>
+						<div class="weui-cell__ft"></div>
+					</div>
+					<div class="weui-cells__title">朋友圈或视频动态</div>
+				<div class="weui-cells">
+					<div class="weui-cell weui-cell_access weui-cell_example">
+						<div class="weui-cell__bd">
+							<p>不让他(她)看</p>
+						</div>
+						<div class="weui-cell__ft"></div>
+					</div>
+					<div class="weui-cell weui-cell_access weui-cell_example">
+						<div class="weui-cell__bd">
+							<p>不看他(她)</p>
+						</div>
+						<div class="weui-cell__ft"></div>
+					</div>
+
+					<div class="weui-cell weui-cell_switch">
+						<div class="weui-cell__bd">
+							<p>允许陌生人看前十条朋友圈</p>
+						</div>
+						<div class="weui-cell__ft">
+							<label for="switchCP" class="weui-switch-cp">
+                            	<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
+                        		<div class="weui-switch-cp__box"></div>
+                    	</label>
+						</div>
+					</div>
+					<div class="weui-cell weui-cell_access weui-cell_example">
+						<div class="weui-cell__bd">
+							<p>允许朋友查看朋友圈的范围</p>
+						</div>
+						<div class="weui-cell__ft"></div>
+					</div>
+					<div class="weui-cell weui-cell_access weui-cell_example">
+						<div class="weui-cell__bd">
+							<p>朋友圈更新提醒</p>
+						</div>
+						<div class="weui-cell__ft"></div>
+					</div>
+				</div>
+			</div>
+			<div class="page__ft">
+				<a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
+			</div>
+		</div>
+		<div class="page__bd" style="height: 100%;">
+			<div class="weui-tab">
+				<div class="weui-tab__panel">
+
+				</div>
+				<div class="weui-tabbar">
+					<a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+						<span style="display: inline-block;position: relative;">
+                        <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                        <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+						</span>
+						<p class="weui-tabbar__label">微信</p>
+					</a>
+					<a href="javascript:;" class="weui-tabbar__item">
+						<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+						<p class="weui-tabbar__label">通讯录</p>
+					</a>
+					<a href="javascript:;" class="weui-tabbar__item">
+						<span style="display: inline-block;position: relative;">
+                        <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                        <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+						</span>
+						<p class="weui-tabbar__label">发现</p>
+					</a>
+					<a href="javascript:;" class="weui-tabbar__item">
+						<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+						<p class="weui-tabbar__label">我</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
+
+</html>
