@@ -1,0 +1,10 @@
+dialogueClass{
+	width:200px;
+	height:200px;
+}
+
+ .weui-dialog,.weui-toast {
+        -webkit-transition-duration: .2s;
+        -webkit-transform: scale(1) translate(50%, 50%);
+        transform: scale(1) translate(50%, 30%);
+    }

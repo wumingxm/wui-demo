@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="./css/weui.min.css" />
+		<link rel="stylesheet" href="./css/privacy.css" />
 	</head>
 
 	<body>
@@ -17,8 +18,8 @@
 							<p>加我为朋友时需要验证</p>
 						</div>
 						<div class="weui-cell__ft">
-							<label for="switchCP" class="weui-switch-cp">
-                        		<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
+							<label for="switchCP" 1 class="weui-switch-cp">
+                        		<input id="switchCP1" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
                         		<div class="weui-switch-cp__box"></div>
                     		</label>
 						</div>
@@ -28,8 +29,8 @@
 							<p>向我推荐通讯录朋友</p>
 						</div>
 						<div class="weui-cell__ft">
-						   <label for="switchCP" class="weui-switch-cp">
-                            	<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
+							<label for="switchCP2" class="weui-switch-cp">
+                            	<input id="switchCP2" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
                         		<div class="weui-switch-cp__box"></div>
                     		</label>
 						</div>
@@ -48,37 +49,39 @@
 						<div class="weui-cell__ft"></div>
 					</div>
 					<div class="weui-cells__title">朋友圈或视频动态</div>
-				<div class="weui-cells">
-					<div class="weui-cell weui-cell_access weui-cell_example">
-						<div class="weui-cell__bd">
-							<p>不让他(她)看</p>
+					<div class="weui-cells">
+						<div class="weui-cell weui-cell_access weui-cell_example">
+							<div class="weui-cell__bd">
+								<p>不让他(她)看</p>
+							</div>
+							<div class="weui-cell__ft"></div>
 						</div>
-						<div class="weui-cell__ft"></div>
-					</div>
-					<div class="weui-cell weui-cell_access weui-cell_example">
-						<div class="weui-cell__bd">
-							<p>不看他(她)</p>
+						<div class="weui-cell weui-cell_access weui-cell_example">
+							<div class="weui-cell__bd">
+								<p>不看他(她)</p>
+							</div>
+							<div class="weui-cell__ft"></div>
 						</div>
-						<div class="weui-cell__ft"></div>
+
+						<div class="weui-cell weui-cell_switch">
+							<div class="weui-cell__bd">
+								<p>允许陌生人看前十条朋友圈</p>
+							</div>
+							<div class="weui-cell__ft">
+								<label for="switchCP" class="weui-switch-cp">
+	                            	<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
+	                        		<div class="weui-switch-cp__box"></div>
+                    			</label>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access weui-cell_example" id="showTTLDialogue">
+							<div class="weui-cell__bd">
+								<p>允许朋友查看朋友圈的范围</p>
+							</div>
+							<div class="weui-cell__ft" id="showTTL"></div>
+						</div>
 					</div>
 
-					<div class="weui-cell weui-cell_switch">
-						<div class="weui-cell__bd">
-							<p>允许陌生人看前十条朋友圈</p>
-						</div>
-						<div class="weui-cell__ft">
-							<label for="switchCP" class="weui-switch-cp">
-                            	<input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked"/>
-                        		<div class="weui-switch-cp__box"></div>
-                    	</label>
-						</div>
-					</div>
-					<div class="weui-cell weui-cell_access weui-cell_example">
-						<div class="weui-cell__bd">
-							<p>允许朋友查看朋友圈的范围</p>
-						</div>
-						<div class="weui-cell__ft"></div>
-					</div>
 					<div class="weui-cell weui-cell_access weui-cell_example">
 						<div class="weui-cell__bd">
 							<p>朋友圈更新提醒</p>
@@ -93,9 +96,7 @@
 		</div>
 		<div class="page__bd" style="height: 100%;">
 			<div class="weui-tab">
-				<div class="weui-tab__panel">
-
-				</div>
+				<div class="weui-tab__panel"></div>
 				<div class="weui-tabbar">
 					<a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
 						<span style="display: inline-block;position: relative;">
@@ -124,6 +125,7 @@
 		</div>
 	</body>
 	<script src="./js/zepto.min.js"></script>
+	<script src="./js/privacy.js"></script>
 	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script src="https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
 

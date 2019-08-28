@@ -282,8 +282,9 @@ $(function () {
     }
 
     function init(){
+    	debugger
         preload();
-        fastClick();
+        fastClick()
         androidInputBugFix();
         setJSAPI();
         setPageManager();
